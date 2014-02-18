@@ -6,13 +6,6 @@ class Localeats.Views.Queries.IndexView extends Backbone.View
   initialize: () ->
     @options.queries.bind('reset', @addAll)
 
-  events: 
-    "click .addressInput" : "alertMe"
-
-  alertMe: () => 
-    alert("hi!")
-
-
   addAll: () =>
     @options.queries.each(@addOne)
 

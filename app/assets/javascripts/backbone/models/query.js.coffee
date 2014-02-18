@@ -3,9 +3,8 @@ class Localeats.Models.Query extends Backbone.Model
 
   defaults:
     input: null
-    content: null
+    result: null
 
 class Localeats.Collections.QueriesCollection extends Backbone.Collection
   model: Localeats.Models.Query
   url: '/queries'
-
