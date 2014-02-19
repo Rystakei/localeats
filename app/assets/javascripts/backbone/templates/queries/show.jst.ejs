@@ -3,9 +3,13 @@
   <%= input %>
 </p>
 
-<p>
-  <b>Result:</b>
-  <%= result %>
+<p class="result">
+  <h3>Results:</h3>
+  <% var resultArr = result.split(","); %>
+  <% $.each(resultArr, function(index, value) { %>
+  <%= index + 1 %>. <%= value %> <br>
+
+  <% }); %>
 </p>
 
 

@@ -12,11 +12,8 @@ class Query < ActiveRecord::Base
 		results.each do |venue|
 			puts "Restaurant Name: #{venue.name}"
 			puts "Address: #{venue.location.address}"
-			total_results.push(venue.name)
+			total_results.push("#{venue.name} - #{venue.location.address}")
 		end
 		self.result = total_results.join(",")
  	 end
-	# def find_restaurants
-	# 	self.input = "Testing 123"
-	# end
 end

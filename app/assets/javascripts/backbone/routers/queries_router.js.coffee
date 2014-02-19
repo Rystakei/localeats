@@ -8,7 +8,7 @@ class Localeats.Routers.QueriesRouter extends Backbone.Router
     "index"    : "index"
     ":id/edit" : "edit"
     ":id"      : "show"
-    ".*"        : "index"
+    ".*"        : "newQuery"
 
   newQuery: ->
     @view = new Localeats.Views.Queries.NewView(collection: @queries)

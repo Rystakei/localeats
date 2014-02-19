@@ -5,6 +5,7 @@ class QueriesController < ApplicationController
   # GET /queries.json
   def index
     @queries = Query.all
+    @query = Query.new
   end
 
   # GET /queries/1
@@ -14,6 +15,7 @@ class QueriesController < ApplicationController
 
   # GET /queries/new
   def new
+    @queries = Query.all
     @query = Query.new
   end
 
